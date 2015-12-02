@@ -8,6 +8,6 @@ web:
   volumes:
     - .:/code
 db:
-  image: orchardup/mysql
+  image: registry.default.kube.cluster.local/mysql
   environment:
     MYSQL_DATABASE: wordpress
