@@ -8,4 +8,4 @@ web:
     - "db:redis"
 
 db:
-  image: redis-latest
+  image: redis:latest
