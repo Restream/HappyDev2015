@@ -1,13 +1,10 @@
 web:
   build: .
-  command: php -S 0.0.0.0:8000 -t /code
   ports:
-    - "8000:8000"
+    - 8000:8000
   links:
     - db
-  volumes:
-    - .:/code
 db:
-  image: registry.default.kube.cluster.local/orchardup/mysql
+  image: registry.default.kube.cluster.local/mysql
   environment:
     MYSQL_DATABASE: wordpress
