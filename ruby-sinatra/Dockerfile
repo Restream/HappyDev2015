@@ -5,6 +5,6 @@ WORKDIR /app
 
 RUN bundle install -j4
 
-EXPOSE 4567
+EXPOSE 8000
 
 CMD bundle exec ruby app.rb

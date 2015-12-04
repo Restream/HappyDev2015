@@ -7,6 +7,7 @@ redis = Redis.new(
 )
 
 set :bind, '0.0.0.0'
+set :port, 8000
 
 get "/" do
   "Hello World! I have been seen #{redis.incr('/')} times."
