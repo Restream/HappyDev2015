@@ -1,4 +1,4 @@
-FROM registry.default.kube.cluster.local/ruby:2.2.0
+FROM registry.default.kube.cluster.local/ruby-happydev
 
 ADD . /app
 WORKDIR /app
