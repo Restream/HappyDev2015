@@ -1,13 +1,10 @@
 FROM registry.default.kube.cluster.local/node:latest
 
-RUN mkdir /src
+ADD . /app
+WORKDIR /app
 
-RUN npm install nodemon -g
-
-WORKDIR /src
-ADD . /src
 RUN npm install
 
-EXPOSE 3000
+EXPOSE 8000
 
 CMD npm start
